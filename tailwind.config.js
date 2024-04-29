@@ -13,7 +13,16 @@ module.exports = {
     extend: {
       colors: {
         primary: "#353535",
-        secondary:"#6C6C6C"
+        secondary:"#6C6C6C",
+        detailsdiv: '#F3F4E5',
+        textcolor:'#818181',
+        servicediv:'#6C6C6C',
+        serviceTitle:"#F3F4E5",
+        servicedescription:'#C2C2B5',
+        contact:'#FFFFFF',
+        placeholdecolor:'#737373',
+        button:'#545F71'
+        
 
       },
       fontFamily: {
@@ -35,10 +44,13 @@ module.exports = {
       },
       height: {
         ...rem(29),
+        ...rem(250),
         ...rem(269),
+        ...rem(320),
         ...rem(346),
       },
       fontSize: {
+        ...rem(15),
         ...rem(16),
         ...rem(18),
         ...rem(19),
@@ -54,6 +66,7 @@ module.exports = {
       },
       lineHeight: {
         ...rem(16),
+        ...rem(21.09),
         ...rem(23.4),
         ...rem(26),
         ...rem(28),
