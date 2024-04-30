@@ -3,6 +3,7 @@ import "./globals.css";
 import { Footer, Navbar } from "@/components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import 'react-modern-drawer/dist/index.css'
 
 const inter = Inter({ subsets: ["latin"] });
 
