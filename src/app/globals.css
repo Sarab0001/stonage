@@ -34,10 +34,9 @@ body {
   }
 }
 
-.slick-slide {
-  margin: 0 10px;
+.homeslider .slick-slide {
+  margin: 0 27.9px;
 }
 
-.slick-list {
-  margin: 0 -10px;
-}
+
+

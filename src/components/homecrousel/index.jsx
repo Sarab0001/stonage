@@ -1,36 +1,22 @@
 'use client'
-import { SliderImg1, SliderImg2, SliderImg3, SliderImg4 } from "@/assets";
 import React from "react";
 import Slider from "react-slick";
+import { sliderImage } from "@/constant";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block",  }}
-      onClick={onClick}
-    />
-  );
-}
-
-
-function Responsive() {
+function Responsive({ hideText = false }) {
   var settings = {
-    dots: true,
-    autoPlay: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     initialSlide: 0,
-    
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
@@ -53,33 +39,22 @@ function Responsive() {
     ]
   };
   return (
-    <div className="slider-container bg-primary h-346">
-      <Slider {...settings}>
-        <div className="w-346 h-346">
-          <img src={SliderImg1.src} alt="sliderImage1" className="h-full w-full" />
-        </div>
-        <div className="w-346 h-346">
-          <img src={SliderImg2.src} alt="sliderImage1" className="h-full w-full"/>
-        </div>
-        <div className="w-346 h-346">
-          <img src={SliderImg3.src} alt="sliderImage1" className="h-full w-full"/>
-        </div>
-        <div className="w-346 h-346"> 
-          <img src={SliderImg4.src} alt="sliderImage1" className="h-full w-full"/>
-        </div>
-        <div className="w-346 h-346">
-          <img src={SliderImg1.src} alt="sliderImage1" className="h-full w-full"/>
-        </div>
-        <div className="w-346 h-346">
-          <img src={SliderImg2.src} alt="sliderImage1" className="h-full w-full"/>
-        </div>
-        <div className="w-346 h-346">
-          <img src={SliderImg3.src} alt="sliderImage1" className="h-full w-full"/>
-        </div>
-        <div className="w-346 h-346">
-          <img src={SliderImg4.src} alt="sliderImage1" className="h-full w-full"/>
-        </div>
-      </Slider>
+    <div className="homeslider">
+      <div className="slider-container bg-primary md:h-[430px] h-[310px] overflow-hidden">
+        <Slider {...settings}>
+          {sliderImage.map((elem, i) => (
+            <div key={i} className="md:w-346 md:h-346">
+              <img src={elem.image.src} alt={`sliderImage${i}`} className="h-full w-full" />
+              {hideText && (
+                <>
+                  <h1 className="text-white mt-4 font-Roboto">{elem.title}</h1>
+                  <p className="text-15 font-InstrumentSerif">{elem.desc}</p>
+                </>
+              )}
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }
