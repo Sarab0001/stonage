@@ -38,10 +38,10 @@ export default function Homecrousel({ hideText,color }) {
           <SwiperSlide key={i}>
             <div>
               {elem.image ? (
-                <img className="w-346 h-346" src={elem.image.src} alt="image" />
+                <img className="md:w-346 md:h-346 w-[278px] h-[278px]" src={elem.image.src} alt="image" />
               ) : (
                 
-                <video  className='object-cover h-346' preload="none" autoPlay={true} muted playsInline loop>
+                <video  className='object-cover md:h-346 w-248' preload="none" autoPlay={true} muted playsInline loop>
                   <source   src={elem.video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>

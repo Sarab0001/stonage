@@ -13,12 +13,12 @@ const Navbar = () => {
   return (
     <div className={pathname == '/workpage' ? `bg-white text-primary pb-8 md:pb-0 py-3` : "bg-primary pb-8 md:pb-0 py-3"}>
       <div className='md:w-11/12 w-93p mx-auto lg:flex  justify-between '>
-        <div className='flex justify-between gap-8 '>
+        <div className='flex justify-between items-center gap-8 '>
           <div>
             <div className='flex items-center xl:gap-16 lg:gap-8'>
               <div>
                 <Link href='/'>
-                  <p className='xl:text-65 lg:text-55 md:text-45 text-32 font-semibold font-Roboto text-nowrap'>STONEGE ROMEO</p>
+                  <p className='xl:text-65 lg:text-55 md:text-45 text-32 font-semibold  font-Roboto text-nowrap'>STONEGE ROMEO</p>
                 </Link>
               </div>
               <div className='hidden lg:flex xl:gap-10 lg:gap-5 font-Roboto lg:text-base md:text-sm z-50 font-semibold '>
@@ -34,7 +34,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className='lg:hidden'>
+          <div className='lg:hidden '>
             <SideDrawer/>
           </div>
         </div>

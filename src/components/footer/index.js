@@ -33,16 +33,28 @@ const Footer = () => {
                 </div>
                 <div className='flex gap-4 justify-center '>
                     <div className='lg:w-29 lg:h-29 md:w-6 md:h-8 w-8'>
-                        <img src={Instagram.src} alt="" />
+                        <Link href='https://www.instagram.com/accounts/login/'>
+
+                            <img src={Instagram.src} alt="" />
+                        </Link>
                     </div>
                     <div className='lg:w-29 lg:h-29 md:w-6 md:h-8 w-8'>
+                    <Link href="https://www.behance.net/">
+
                         <img src={Be.src} alt="" />
+                    </Link>
                     </div>
                     <div className='lg:w-29 lg:h-29 md:w-6 md:h-8 w-8'>
+                    <Link href='https://dribbble.com/'>
+
                         <img src={Website.src} alt="" />
+                    </Link>
                     </div>
                     <div className='lg:w-29 lg:h-29 md:w-6 md:h-8 w-8'>
+                    <Link href='https://in.linkedin.com/'>
+
                         <img src={Linkedin.src} alt="" />
+                    </Link>
                     </div>
                 </div>
             </div>
