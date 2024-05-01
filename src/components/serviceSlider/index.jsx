@@ -1,65 +1,62 @@
 'use client'
-import { ExploreImg3, ExploreImg4, ExploreImg5, ExploreImg6 } from "@/assets";
-import React from "react";
-import Slider from "react-slick";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { exploreImages } from '@/constant';
 
-function Responsive() {
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-            className: "center",
-            centerMode: true,
-            infinite: true,
-            centerPadding: "60px",
-            slidesToShow: 1,
-            speed: 500
-        }
-      }
-    ]
-  };
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+import { Pagination } from 'swiper/modules';
+import { ExploreImg3, ExploreImg4, ExploreImg5, ExploreImg6, SliderGif, SliderImg1, SliderImg2, SliderImg4 } from '@/assets';
+
+export default function servicecrousel({ hideText }) {
   return (
-    <div className="slider-container overflow-hidden h-[658px]">
-      <Slider {...settings}>
-        <div className=" !h-[685px] !w-11/12 !mx-auto">
-          <img src={ExploreImg3.src} alt="" />
-        </div>
-        <div className="!h-[685px] !w-11/12 !mx-auto">
-          <img src={ExploreImg4.src} alt="" />
-        </div>
-        <div className="!h-[685px] !w-11/12 !mx-auto">
-         <img src={ExploreImg5.src} alt="" />
-        </div>
-        <div className="!h-[685px] !w-11/12 !mx-auto">
-         <img src={ExploreImg6.src} alt="" />
-        </div>
-      </Slider>
-    </div>
+    <>
+      <Swiper
+        slidesPerView={4.5}
+        centeredSlides={false}
+        spaceBetween={30}
+
+
+        scrollbar={{
+          hide: true,
+        }}
+        breakpoints={{
+          375: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            centeredSlides: false
+           
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
+        className="swiper-containers"
+      >
+
+
+        <SwiperSlide >
+          <img className=' h-[685px]' src={ExploreImg3.src} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img className='h-[685px]' src={ExploreImg4.src} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img className='h-[685px]' src={ExploreImg5.src} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img className='h-[685px]' src={ExploreImg6.src} alt="" />
+        </SwiperSlide>
+
+
+      </Swiper>
+    </>
   );
 }
-
-export default Responsive;

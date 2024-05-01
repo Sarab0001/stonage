@@ -7,13 +7,13 @@ const index = () => {
     <div className='bg-primary'>
     <div className=' w-11/12 mx-auto'>
 
-        <h1 className='md:text-65 text-[34px] font-Roboto md:w-[40%] md:leading-[70px] leading-48 font-semibold'>Let’s create <br/> something magical</h1>
+        <h1 className='md:text-65 text-[34px] font-Roboto lg:w-[70%] md:leading-[70px] leading-48 font-semibold'>Let’s create <br/> something magical</h1>
         <div className='flex gap-4 items-center py-8'>
             <p className='text-2xl  font-InstrumentSerif'>Start Project</p>
             <img className='w-5 h-3 mt-1' src={rightArrow.src} alt="" />
         </div>
 
-        <div className='md:flex justify-between md:w-11/12 mx-auto py-12 gap-4 '>
+        <div className='lg:flex justify-between md:w-11/12  py-12 gap-4 '>
                 {
                     service.map((elem, i) => (
                         <div key={i} className='md:bg-servicediv bg-detailsdiv p-8 mb-4'> 

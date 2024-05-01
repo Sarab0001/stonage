@@ -1,62 +1,66 @@
 'use client'
-import React from "react";
-import Slider from "react-slick";
-import { sliderImage } from "@/constant";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-function Responsive({ hideText = false }) {
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { sliderImage } from '@/constant';
+
+export default function Homecrousel({ hideText,color }) {
   return (
-    <div className="homeslider">
-      <div className="slider-container bg-primary md:h-[430px] h-[310px] overflow-hidden">
-        <Slider {...settings}>
-          {sliderImage.map((elem, i) => (
-            <div key={i} className="md:w-346 md:h-346">
-              <img src={elem.image.src} alt={`sliderImage${i}`} className="h-full w-full" />
-              {hideText && (
-                <>
-                  <h1 className="text-white mt-4 font-Roboto">{elem.title}</h1>
-                  <p className="text-15 font-InstrumentSerif">{elem.desc}</p>
-                </>
+    <>
+      <Swiper
+        slidesPerView={4.5}
+        centeredSlides={false}
+        spaceBetween={30}
+
+        scrollbar={{
+          hide: true,
+        }}
+        breakpoints={{
+          375: {
+            slidesPerView: 1.4,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+          },
+          1024: {
+            slidesPerView: 4.5,
+            spaceBetween: 25,
+          },
+        }}
+        className={color ? `swiper-containers` : "swiper-container"}
+      >
+        {sliderImage.map((elem, i) => (
+          <SwiperSlide key={i}>
+            <div>
+              {elem.image ? (
+                <img className="w-346 h-346" src={elem.image.src} alt="image" />
+              ) : (
+                
+                <video  className='object-cover h-346' preload="none" autoPlay={true} muted playsInline loop>
+                  <source   src={elem.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                
               )}
+            
             </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
+            {hideText && (
+              <>
+                <h1 className="py-2 text-black">{elem.title}</h1>
+                <p className='text-black'>{elem.desc}</p>
+                <div className='h-[300px]'></div>
+                
+
+              </>
+            )}
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 }
-
-export default Responsive;

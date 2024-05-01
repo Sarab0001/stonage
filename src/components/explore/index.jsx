@@ -1,7 +1,8 @@
 import { ExploreImg, ExploreImg1, ExploreImg2, ExploreImg7 } from '@/assets'
 import React from 'react'
 import { exploreImages } from '@/constant'
-import { ServiceSlider } from '..';
+import { ServiceCrousel } from '..';
+// import { ServiceSlider } from '..';
 const Index = () => {
   console.log(exploreImages);
   return (
@@ -17,7 +18,8 @@ const Index = () => {
         </div>
 
       </div>
-      <ServiceSlider />
+      <ServiceCrousel /> 
+     
       <div className='py-16 md:w-11/12 p-8 mx-auto '>
         <img src={ExploreImg7.src} alt="" />
       </div>

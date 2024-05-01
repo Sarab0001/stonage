@@ -1,11 +1,12 @@
 import React from 'react'
-import { HomeCarousel, LetsCreate } from '..'
+import { Footer, Homecrousel, LetsCreate } from '..'
 
 const Home = () => {
   return (
     <>
-      <HomeCarousel />
+      <Homecrousel />
       <LetsCreate />
+      <Footer />
     </>
   )
 }

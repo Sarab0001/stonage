@@ -3,7 +3,7 @@ import React from 'react'
 
 const Collaborator = () => {
     return (
-        <div className='bg-white py-12 border-b border-black'>
+        <div className='bg-white py-12 border-b border-t border-black'>
             <div className='w-11/12 mx-auto md:p-8 '>
                 <div className=' md:flex justify-between text-black'>
                     <div className='flex flex-col gap-2 '>
@@ -11,7 +11,7 @@ const Collaborator = () => {
                             <p className='font-Roboto text-primary font-semibold'>AI Collaborative Campaign</p>
                             <p className='font-InstrumentSerif text-primary text-15'>Nike</p>
                         </div>
-                        <div className=' xl:w-[85%] '>
+                        <div className=' xl:w-[100%] '>
                             <p className='xl:text-65 lg:text-[55px] md:text-[45px] text-[34px] text-primary  xl:leading-76 lg:leading-[60px] leading-42  font-Roboto font-semibold'>Enhancing creative concepts through AI</p>
                         </div>
                         <div className='flex items-center gap-4 py-8'>
@@ -24,7 +24,7 @@ const Collaborator = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='lg:w-[985px]  '>
+                    <div className='lg:w-[92%]  '>
                         <img className='w-full h-full' src={CollabImg.src} alt="" />
                     </div>
 

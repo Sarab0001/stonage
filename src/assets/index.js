@@ -19,5 +19,7 @@ import ExploreImg6 from '../assets/exploreimg6.png'
 import ExploreImg7 from '../assets/exploreimg7.png'
 import ContactImg from '../assets/contactImg.png'
 import Hamburger from '../assets/hamburger.png'
+import DownArrow from '../assets/downarrow.svg'
+// import SliderVideo from '../assets/sliderVideo.mp4'
 
-export {Hamburger, ContactImg, ExploreImg2, ExploreImg3, ExploreImg4, ExploreImg5, ExploreImg6, ExploreImg7, ExploreImg, BlackArrow, NavbarImg, SliderImg1, SliderImg2, SliderGif, SliderImg4, rightArrow, Instagram, Be, Website, Linkedin, CollabImg }
+export {DownArrow, Hamburger, ContactImg, ExploreImg2, ExploreImg3, ExploreImg4, ExploreImg5, ExploreImg6, ExploreImg7, ExploreImg, BlackArrow, NavbarImg, SliderImg1, SliderImg2, SliderGif, SliderImg4, rightArrow, Instagram, Be, Website, Linkedin, CollabImg }

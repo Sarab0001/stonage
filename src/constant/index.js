@@ -1,4 +1,4 @@
-import {ExploreImg3, ExploreImg4, ExploreImg5, ExploreImg6, SliderGif, SliderImg1,SliderImg2,SliderImg3,SliderImg4} from '../assets'
+import {ExploreImg3, ExploreImg4, ExploreImg5, ExploreImg6, SliderGif, SliderImg1,SliderImg2,SliderImg3,SliderImg4, } from '../assets'
 
 export const sliderImage = [
     {
@@ -12,7 +12,7 @@ export const sliderImage = [
       desc:"Nike"
     },
     {
-      image: SliderGif,
+      video: "sliderVideo.mp4",
       title:"Colour work",
       desc:"Chanel x Hirate Yurina"
     },

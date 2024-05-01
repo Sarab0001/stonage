@@ -37,6 +37,18 @@ body {
 .homeslider .slick-slide {
   margin: 0 27.9px;
 }
+.swiper-container {
+  background-color:#353535;
+}
+.swiper-containers {
+  background-color:white;
+  border-bottom: 1px solid black;
+  
+}
+.videoplay {
+  height: 362px;
+}
+
 
 
 
