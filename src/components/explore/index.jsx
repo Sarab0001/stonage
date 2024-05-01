@@ -8,21 +8,23 @@ const Index = () => {
   return (
     <div className='bg-white '>
       <div className='border-b border-black'>
-        <div className='md:flex gap-4 md:w-11/12 mx-auto py-16 p-8 '>
-          <div className='lg:w-[680px] mb-4  lg:h-[805px]'>
+        <div className='md:flex gap-4 md:w-11/12 mx-auto py-20 p-8 '>
+          <div className='lg:w-680 mb-4  lg:h-805'>
             <img src={ExploreImg.src} alt="" />
           </div>
-          <div className='lg:w-[680px] lg:h-[805px]'>
+          <div className='lg:w-680 mb-4  lg:h-805'>
             <img src={ExploreImg2.src} alt="" />
           </div>
         </div>
 
       </div>
       <ServiceCrousel /> 
-     
-      <div className='py-16 md:w-11/12 p-8 mx-auto '>
+     <div className=' border-t border-b border-1 border-black'>
+
+      <div className='py-16 md:w-11/12 p-8 mx-auto'>
         <img src={ExploreImg7.src} alt="" />
       </div>
+     </div>
     </div>
   )
 }

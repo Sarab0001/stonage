@@ -13,16 +13,16 @@ module.exports = {
     extend: {
       colors: {
         primary: "#353535",
-        secondary:"#6C6C6C",
+        secondary: "#6C6C6C",
         detailsdiv: '#F3F4E5',
-        textcolor:'#818181',
-        servicediv:'#6C6C6C',
-        serviceTitle:"#F3F4E5",
-        servicedescription:'#C2C2B5',
-        contact:'#FFFFFF',
-        placeholdecolor:'#737373',
-        button:'#545F71'
-        
+        textcolor: '#818181',
+        servicediv: '#6C6C6C',
+        serviceTitle: "#F3F4E5",
+        servicedescription: '#C2C2B5',
+        contact: '#FFFFFF',
+        placeholdecolor: '#737373',
+        button: '#545F71'
+
 
       },
       fontFamily: {
@@ -47,31 +47,62 @@ module.exports = {
       },
       width: {
         ...rem(29),
+        ...rem(20),
+        ...rem(44),
+        ...rem(150),
+        ...rem(174),
         ...rem(269),
         ...rem(346),
+        ...rem(570),
+        ...rem(370),
+        ...rem(680),
+        ...rem(145),
+        "68p": "68%",
+        "70p": "70%",
+        "75p": "75%",
+        "83p": "83%",
+        "87p": "87%",
+        "92p": "92%",
+        "93p": "93%",
+        "95p": "95%",
+        "25p": "25%",
+
 
       },
       height: {
         ...rem(29),
+        ...rem(44),
+        ...rem(145),
+        ...rem(150),
+        ...rem(174),
         ...rem(250),
         ...rem(269),
         ...rem(320),
+        ...rem(300),
+        ...rem(350),
         ...rem(346),
+        ...rem(685),
+        ...rem(805),
+        ...rem(1100),
+        ...rem(1000),
       },
       fontSize: {
         ...rem(15),
         ...rem(16),
         ...rem(18),
         ...rem(19),
+        ...rem(22),
         ...rem(23),
         ...rem(24),
         ...rem(28),
         ...rem(30),
         ...rem(32),
-        ...rem(35),
-        ...rem(40),
+        ...rem(34),
+        ...rem(45),
+        ...rem(55),
+        ...rem(60),
         ...rem(65),
-        ...rem(87),
+
       },
       lineHeight: {
         ...rem(16),
@@ -85,6 +116,7 @@ module.exports = {
         ...rem(36.5),
         ...rem(42),
         ...rem(76),
+        ...rem(60),
         ...rem(130),
         ...rem(95),
         ...rem(70)
@@ -92,6 +124,12 @@ module.exports = {
       },
       spacing: {
         '45p': "45%"
+      },
+      top: {
+        '838px': '838px',
+      },
+      padding: {
+        '30px': '30px',
       },
       borderRadius: {
         ...rem(32),

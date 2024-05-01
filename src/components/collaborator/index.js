@@ -12,11 +12,11 @@ const Collaborator = () => {
                             <p className='font-InstrumentSerif text-primary text-15'>Nike</p>
                         </div>
                         <div className=' xl:w-[100%] '>
-                            <p className='xl:text-65 lg:text-[55px] md:text-[45px] text-[34px] text-primary  xl:leading-76 lg:leading-[60px] leading-42  font-Roboto font-semibold'>Enhancing creative concepts through AI</p>
+                            <p className='xl:text-65 lg:text-55 md:text-45 text-34 text-primary  xl:leading-76 lg:leading-60 leading-42  font-Roboto font-semibold'>Enhancing creative concepts through AI</p>
                         </div>
                         <div className='flex items-center gap-4 py-8'>
                             <div className=''>
-                                <p className='font-InstrumentSerif md:text-15 text-2xl  text-primary'>Project Details</p>
+                                <p className='font-InstrumentSerif md:text-15 lg:text-2xl underline underline-offset-4  text-primary'>Project Details</p>
                             </div>
                             <div className='w-3 h-3  '>
                                 <img src={BlackArrow.src} alt="Arrow" />
@@ -24,7 +24,7 @@ const Collaborator = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='lg:w-[92%]  '>
+                    <div className='lg:w-92p  '>
                         <img className='w-full h-full' src={CollabImg.src} alt="" />
                     </div>
 

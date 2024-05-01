@@ -29,11 +29,11 @@ const Index = () => {
     };
 
     return (
-        <div className='bg-primary md:h-[1100px]'>
+        <div className='bg-primary md:h-1100'>
             <div className='md:flex  w-11/12 mx-auto   '>
                 <div className=''>
                     <div className=''>
-                        <h1 className='text-contact font-Roboto xl:text-[60px] lg:text-[45px] md:text-[45px] text-2xl font-semibold'>hello@stoneageromoeo.xyz</h1>
+                        <h1 className='text-contact font-Roboto xl:text-60  md:text-45 text-2xl font-semibold'>hello@stoneageromoeo.xyz</h1>
                     </div>
                     <p className='text-2xl font-InstrumentSerif mt-8'>+61450034</p>
                     <form className='py-24 flex flex-col' onSubmit={handleSubmit}>
@@ -82,7 +82,7 @@ const Index = () => {
                 </div>
                 <div className=" hidden xl:block   md:absolute  top-0 right-0  ">
                     <div className=''>
-                        <img className='xl:w-[570px] lg:w-[370px] xl:h-[1100px]  lg:h-[1000px]' src={SliderGif.src} alt="" />
+                        <img className='xl:w-570 lg:w-370 xl:h-1100  lg:h-1000' src={SliderGif.src} alt="" />
                     </div>
                 </div>
             </div>

@@ -30,29 +30,45 @@ export default function servicecrousel({ hideText }) {
            
           },
           768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+            slidesPerView: 2,
+            spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 4,
-            spaceBetween: 50,
+            slidesPerView: 3,
+            spaceBetween: 25,
           },
+          1200:{
+            slidesPerView: 4,
+            spaceBetween: 25,
+          }
         }}
-        className="swiper-containers"
+        className="swiper-containers my-32 "
       >
 
 
         <SwiperSlide >
-          <img className=' h-[685px]' src={ExploreImg3.src} alt="" />
+          <img className=' h-685 w-full' src={ExploreImg3.src} alt="" />
         </SwiperSlide>
         <SwiperSlide >
-          <img className='h-[685px]' src={ExploreImg4.src} alt="" />
+          <img className='h-685 w-full' src={ExploreImg4.src} alt="" />
         </SwiperSlide>
         <SwiperSlide >
-          <img className='h-[685px]' src={ExploreImg5.src} alt="" />
+          <img className='h-685 w-full' src={ExploreImg5.src} alt="" />
         </SwiperSlide>
         <SwiperSlide >
-          <img className='h-[685px]' src={ExploreImg6.src} alt="" />
+          <img className='h-685 w-full' src={ExploreImg6.src} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img className=' h-685 w-full' src={ExploreImg3.src} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img className='h-685 w-full' src={ExploreImg4.src} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img className='h-685 w-full' src={ExploreImg5.src} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img className='h-685 w-full' src={ExploreImg6.src} alt="" />
         </SwiperSlide>
 
 

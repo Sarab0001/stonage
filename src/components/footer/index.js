@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <div className='bg-secondary '>
             <div className='md:flex justify-between  items-end w-11/12  md:py-12 py-8  mx-auto'>
-                <div className='flex flex-col md:gap-10 lg:gap-20 xl:p-8 lg:p-0 w-[83%]'>
+                <div className='flex flex-col md:gap-10 lg:gap-20 xl:p-8 lg:p-0 w-83p'>
                     <div>
-                        <h1 className='text-[32px] font-semibold font-Roboto xl:text-65 lg:text-[55px] md:text-[45px]   text-nowrap'>STONEAGE ROMEO</h1>
+                        <h1 className='text-32 font-semibold font-Roboto xl:text-65 lg:text-55 md:text-45   text-nowrap'>STONEAGE ROMEO</h1>
                     </div>
                     <div className='flex flex-col lg:gap-2 mt-4 md:mt-0'>
                         <Link href='/'>
@@ -23,11 +23,11 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='xl:w-[25%] lg:w-269 lg:h-269 w-[145px] h-[145px] mt-40 md:mt-0 xl:mb-7 md:mb-11 lg:mb-0 mx-auto md:mx-0 '>
+                <div className='xl:w-25p lg:w-269 lg:h-269 w-145 h-145 mt-40 md:mt-0 xl:mb-7 md:mb-11 lg:mb-0 mx-auto md:mx-0 '>
                     <img src={NavbarImg.src} alt="" />
                 </div>
             </div>
-            <div className='flex flex-col gap-4 md:flex md:flex-row justify-between xl:w-[87%] md:w-11/12 w-[95%]  mx-auto  py-4'>
+            <div className='flex flex-col gap-4 md:flex md:flex-row justify-between xl:w-87p md:w-11/12 w-95p  mx-auto  py-4'>
                 <div>
                     <p className='xl:text-lg lg:text-base md:text-sm  text-center'>Copyright © 3330 BC - 2024 Stoneage Romeo | Sydney | Worldwide</p>
                 </div>

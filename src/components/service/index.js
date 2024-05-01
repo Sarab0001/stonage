@@ -7,7 +7,7 @@ const index = () => {
     <div className='bg-primary'>
     <div className=' w-11/12 mx-auto'>
 
-        <h1 className='md:text-65 text-[34px] font-Roboto lg:w-[70%] md:leading-[70px] leading-48 font-semibold'>Let’s create <br/> something magical</h1>
+        <h1 className='md:text-65 text-34 font-Roboto lg:w-70p md:leading-70 leading-48 font-semibold'>Let’s create <br/> something magical</h1>
         <div className='flex gap-4 items-center py-8'>
             <p className='text-2xl  font-InstrumentSerif'>Start Project</p>
             <img className='w-5 h-3 mt-1' src={rightArrow.src} alt="" />
