@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { Hamburger, NavbarImg } from '@/assets';
+import { NavbarImg } from '@/assets';
 import Link from 'next/link';
 import { SideDrawer } from '..';
 import { usePathname } from 'next/navigation';
@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className={pathname == '/workpage' ? `bg-white text-primary pb-8 md:pb-0 py-3` : "bg-primary pb-8 md:pb-0 py-3"}>
       <div className='md:w-11/12 w-93p mx-auto lg:flex  justify-between '>
-        <div className='flex justify-between items-center gap-8 '>
+        <div className='flex justify-between items-center md:items-start gap-8 '>
           <div>
             <div className='flex items-center xl:gap-16 lg:gap-8'>
               <div>

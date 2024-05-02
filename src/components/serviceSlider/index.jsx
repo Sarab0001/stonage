@@ -1,33 +1,34 @@
 'use client'
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { exploreImages } from '@/constant';
-
+import { serviceSliderImg } from '@/constant';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Scrollbar } from 'swiper/modules';
 
 
-import { Pagination } from 'swiper/modules';
-import { ExploreImg3, ExploreImg4, ExploreImg5, ExploreImg6, SliderGif, SliderImg1, SliderImg2, SliderImg4 } from '@/assets';
 
-export default function servicecrousel({ hideText }) {
+export default function servicecrousel() {
   return (
     <>
       <Swiper
         slidesPerView={4.5}
         centeredSlides={false}
         spaceBetween={30}
+        loop={true}
 
 
         scrollbar={{
           hide: true,
         }}
         breakpoints={{
-          375: {
-            slidesPerView: 1.2,
+          300: {
+            slidesPerView: 1.5,
             spaceBetween: 20,
-            centeredSlides: false
-           
+            centeredSlides: true
+
+
+
           },
           768: {
             slidesPerView: 2,
@@ -37,39 +38,22 @@ export default function servicecrousel({ hideText }) {
             slidesPerView: 3,
             spaceBetween: 25,
           },
-          1200:{
+          1200: {
             slidesPerView: 4,
             spaceBetween: 25,
           }
         }}
-        className="swiper-containers my-32 "
+          className="swiper-containers my-32 "
+          modules={[Scrollbar]}
       >
+        {
 
-
-        <SwiperSlide >
-          <img className=' h-685 w-full' src={ExploreImg3.src} alt="" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img className='h-685 w-full' src={ExploreImg4.src} alt="" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img className='h-685 w-full' src={ExploreImg5.src} alt="" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img className='h-685 w-full' src={ExploreImg6.src} alt="" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img className=' h-685 w-full' src={ExploreImg3.src} alt="" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img className='h-685 w-full' src={ExploreImg4.src} alt="" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img className='h-685 w-full' src={ExploreImg5.src} alt="" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img className='h-685 w-full' src={ExploreImg6.src} alt="" />
-        </SwiperSlide>
+          serviceSliderImg.map((elem, i) => (
+            <SwiperSlide key={i}>
+              <img className='md:h-685 h-456 w-full' src={elem.img.src} alt="" />
+            </SwiperSlide>
+          ))
+        }
 
 
       </Swiper>

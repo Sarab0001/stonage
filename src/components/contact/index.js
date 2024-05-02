@@ -1,5 +1,5 @@
 'use client'
-import { ContactImg, DownArrow, SliderGif } from '@/assets'
+import {  DownArrow, SliderGif } from '@/assets'
 import React, { useState } from 'react'
 
 const Index = () => {
@@ -81,8 +81,8 @@ const Index = () => {
                     </form>
                 </div>
                 <div className=" hidden xl:block   md:absolute  top-0 right-0  ">
-                    <div className=''>
-                        <img className='xl:w-570 lg:w-370 xl:h-1100  lg:h-1000' src={SliderGif.src} alt="" />
+                    <div className='xl:w-[462px] lg:w-370 xl:h-1100  lg:h-1000 '>
+                        <img className='w-full h-full object-none' src={SliderGif.src} alt="" />
                     </div>
                 </div>
             </div>
