@@ -11,14 +11,14 @@ export default function Homecrousel({ hideText,color }) {
       <Swiper
         slidesPerView={4.5}
         centeredSlides={false}
-        spaceBetween={30}
+        spaceBetween={15}
         loop={true}
 
         scrollbar={{
           hide: true,
         }}
         breakpoints={{
-          375: {
+          0: {
             slidesPerView: 1.4,
             spaceBetween: 20,
           },
@@ -30,6 +30,14 @@ export default function Homecrousel({ hideText,color }) {
             slidesPerView: 4.5,
             spaceBetween: 25,
           },
+          1450: {
+            slidesPerView: 4.5,
+            spaceBetween: 17,
+          },
+          2050: {
+            slidesPerView: 4.5,
+            spaceBetween: 15,
+          },
         }}
         className={color ? `swiper-containers` : "swiper-container"}
       >
@@ -37,10 +45,10 @@ export default function Homecrousel({ hideText,color }) {
           <SwiperSlide key={i}>
             <div className='lg:mt-8'>
               {elem.image ? (
-                <img className="md:w-346 md:h-346 w-278 h-278" src={elem.image.src} alt="image" />
+                <img className="md:w-300 md:h-300 lg:w-346   lg:h-346 2xl:w-550 2xl:h-346 w-278 h-278 object-cover" src={elem.image.src} alt="image" />
               ) : (
                 
-                <video  className='object-cover md:h-346 w-346 h-278' preload="none" autoPlay={true} muted playsInline loop>
+                <video  className='object-cover md:h-300 lg:h-346 w-346 h-278 2xl:w-550 2xl:h-346' preload="none" autoPlay={true} muted playsInline loop>
                   <source   src={elem.video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
@@ -50,7 +58,7 @@ export default function Homecrousel({ hideText,color }) {
             </div>
             {hideText && (
               <>
-                <h1 className="py-2 text-black font-semibold">{elem.title}</h1>
+                <h1 className="xs:py-2 py-1 text-black font-semibold">{elem.title}</h1>
                 <p className='text-black text-15'>{elem.desc}</p>
                 <div className='h-300'></div>
                 
