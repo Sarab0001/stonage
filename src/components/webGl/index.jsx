@@ -5,7 +5,7 @@ export default function index() {
     return (
         <>
             <div className='w-full relative md:h-[500px] h-[300px]'>
-            {/* <div className='w-full h-[200px]'></div> */}
+        
                 <canvas id="c"  ></canvas>
 
                
