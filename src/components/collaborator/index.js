@@ -3,7 +3,7 @@ import React from 'react'
 
 const Collaborator = () => {
     return (
-        <div className='bg-white py-12 border-b border-t border-black'>
+        <div className='bg-white py-12 '>
             <div className='w-11/12 mx-auto md:p-8 '>
                 <div className=' md:flex justify-between text-black'>
                     <div className='flex flex-col gap-2 '>

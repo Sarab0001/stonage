@@ -8,18 +8,18 @@ const Footer = () => {
             <div className='md:flex justify-between  items-end w-11/12  md:py-12 py-8  mx-auto'>
                 <div className='flex flex-col md:gap-10 lg:gap-20 xl:p-8 lg:p-0 w-83p'>
                     <div>
-                        <h1 className='sm:text-32 font-semibold font-Roboto xl:text-65 lg:text-55 text-32 xs:text-38   text-nowrap'>STONEAGE ROMEO</h1>
+                        <h1 className='sm:text-32 font-medium font-Roboto xl:text-65 lg:text-55 text-32 xs:text-38 tracking-normal   text-nowrap'>STONEAGE ROMEO</h1>
                     </div>
                     <div className='flex flex-col lg:gap-2 xs:gap-1 mt-4 md:mt-0'>
                         <Link href='/'>
-                            <p className='text-lg xs:text-22 font-semibold font-Roboto'>HOME</p>
+                            <p className='text-lg xs:text-22 font-medium font-Roboto'>HOME</p>
                         </Link>
                         <Link href='/workpage'>
-                            <p className='text-lg xs:text-22 font-semibold font-Roboto'>WORK</p>
+                            <p className='text-lg xs:text-22 font-medium font-Roboto'>WORK</p>
 
                         </Link>
                         <Link href='/contactpage'>
-                            <p className='text-lg xs:text-22 font-semibold font-Roboto'>CONTACT</p>
+                            <p className='text-lg xs:text-22 font-medium font-Roboto'>CONTACT</p>
                         </Link>
                     </div>
                 </div>

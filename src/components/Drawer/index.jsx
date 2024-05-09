@@ -27,7 +27,7 @@ const SideDrawer = () => {
                             <p className='text-black'>WORK</p>
                         </Link>
                         <Link href='/servicepage'>
-                            <p className='text-black'>SERVICE</p>
+                            <p className='text-black'>SERVICES</p>
                         </Link>
                         <Link href='/contactpage'>
                             <p className='text-black'>CONTACT</p>

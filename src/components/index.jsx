@@ -9,5 +9,6 @@ import Service from './service'
 import Contact from './contact'
 import ServiceCrousel from './serviceSlider';
 import SideDrawer from './drawer';
+import Webgl from './webGl'
 
-export { Navbar, Home, Homecrousel, LetsCreate, Footer, Details, Explore, Service, Contact,SideDrawer, ServiceCrousel }
+export { Navbar, Home, Homecrousel, LetsCreate, Footer, Details, Explore, Service, Contact,SideDrawer, ServiceCrousel, Webgl }

@@ -18,15 +18,15 @@ const Navbar = () => {
             <div className='flex items-center xl:gap-16 lg:gap-8'>
               <div>
                 <Link href='/'>
-                  <p className='xl:text-65 lg:text-55 md:text-45 text-28 xs:text-32  font-semibold  font-Roboto text-nowrap'>STONEGE ROMEO</p>
+                  <p className='xl:text-65 lg:text-55 md:text-45 text-28 xs:text-32  font-medium tracking-normal  font-Roboto text-nowrap'>STONEGE ROMEO</p>
                 </Link>
               </div>
-              <div className='hidden lg:flex xl:gap-10 lg:gap-5 font-Roboto lg:text-base md:text-sm z-50 font-semibold '>
+              <div className='hidden lg:flex xl:gap-10 lg:gap-5 font-Roboto lg:text-base md:text-sm z-50 font-medium '>
                 <Link href='/workpage'>
                   <p>WORK</p>
                 </Link>
                 <Link href='/servicepage'>
-                  <p>SERVICE</p>
+                  <p>SERVICES</p>
                 </Link>
                 <Link href='/contactpage'>
                   <p>CONTACT</p>
@@ -48,12 +48,12 @@ const Navbar = () => {
       </div>
       {showMenu && (
         <div className='md:hidden'>
-          <div className='flex flex-col items-center gap-4 font-semibold'>
+          <div className='flex flex-col items-center gap-4 font-medium'>
             <Link href='/workpage'>
               <p>WORK</p>
             </Link>
             <Link href='/servicepage'>
-              <p>SERVICE</p>
+              <p>SERVICES</p>
             </Link>
             <Link href='/contactpage'>
               <p>CONTACT</p>

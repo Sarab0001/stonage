@@ -49,6 +49,11 @@ body {
   height: 362px;
 }
 
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
 
 
 

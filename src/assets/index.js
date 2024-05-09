@@ -3,7 +3,7 @@ import SliderImg1 from '../assets/sliderImg1.png';
 import SliderImg2 from '../assets/sliderImg2.png';
 import SliderGif from '../assets/sliderGif.gif';
 import SliderImg4 from '../assets/sliderImg4.png';
-import rightArrow from '../assets/rightArrow.png';
+import rightArrow from '../assets/rightArrow.svg';
 import Instagram from '../assets/instagram.png';
 import Be from '../assets/be.png';
 import Website from '../assets/website.png';
@@ -18,7 +18,7 @@ import ExploreImg5 from '../assets/exploreimg5.png'
 import ExploreImg6 from '../assets/exploreimg6.png'
 import ExploreImg7 from '../assets/exploreimg7.png'
 import ContactImg from '../assets/contactImg.png'
-import Hamburger from '../assets/hamburger.png'
+import Hamburger from '../assets/hamburger.svg'
 import DownArrow from '../assets/downarrow.svg'
 // import SliderVideo from '../assets/sliderVideo.mp4'
 

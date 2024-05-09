@@ -59,8 +59,8 @@ export default function Homecrousel({ hideText,color }) {
             {hideText && (
               <>
                 <h1 className="xs:py-2 py-1 text-black font-semibold">{elem.title}</h1>
-                <p className='text-black text-15'>{elem.desc}</p>
-                <div className='h-300'></div>
+                <p className='text-black text-15 font-serif'>{elem.desc}</p>
+                <div className='lg:h-300  h-[150px]'></div>
                 
 
               </>
