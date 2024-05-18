@@ -38,7 +38,7 @@ const Index = () => {
                     </div>
                     <a href="tel:61420812633"> 
 
-                    <p className='text-2xl font-InstrumentSerif mt-8'>+61 420 812 633</p>
+                    <p className='text-2xl font-InstrumentSerif mt-8 text-white'>+61 420 812 633</p>
                     </a>
                     <form className='py-24 flex flex-col' onSubmit={handleSubmit}>
                         <label className="py-5  text-md text-contact font-Roboto  font font-medium" htmlFor="name">Name*</label>

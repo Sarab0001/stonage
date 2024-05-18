@@ -12,14 +12,14 @@ const Navbar = () => {
   const isSpecialPage = specialPages.includes(pathname);
 
   return (
-    <div className={isSpecialPage ? `bg-white text-primary pb-8 md:pb-0 py-3 relative z-50` : "bg-primary pb-8 md:pb-0 py-3"}>
+    <div className={isSpecialPage ? `bg-white text-primary pb-8 md:pb-0 py-3 relative z-50` : "bg-primary pb-8 md:pb-0 py-3 text-white"}>
       <div className='md:w-11/12  w-93p  mx-auto lg:flex xs:w-11/12  justify-between'>
         <div className='flex justify-between items-center md:items-start gap-8 '>
           <div>
             <div className='flex items-center xl:gap-16 lg:gap-8'>
               <div>
                 <Link href='/'>
-                  <p className='xl:text-65 lg:text-55 md:text-45 text-28 xs:text-32 font-medium tracking-normal font-Roboto text-nowrap relative z-50'>STONEGE ROMEO</p>
+                  <p className='xl:text-65 lg:text-55 md:text-45 text-28 xs:text-32 font-medium tracking-normal font-Roboto text-nowrap relative z-50 '>STONEGE ROMEO</p>
                 </Link>
               </div>
               <div className='hidden lg:flex xl:gap-10 lg:gap-5 font-Roboto lg:text-base md:text-sm font-medium'>
