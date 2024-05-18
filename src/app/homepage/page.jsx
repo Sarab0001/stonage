@@ -1,4 +1,4 @@
-import { Footer, Home } from '@/components'
+import {  Home } from '@/components'
 import React from 'react'
 
 const HomePage = () => {

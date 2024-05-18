@@ -20,12 +20,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -37,23 +34,38 @@ body {
 .homeslider .slick-slide {
   margin: 0 27.9px;
 }
+
 .swiper-container {
-  background-color:#353535;
+  z-index: 50 !important;
 }
+
+.swiper-slide {
+  position: relative;
+  z-index: 50 !important;
+}
+
 .swiper-containers {
-  background-color:white;
- 
-  
+  background-color: white;
+
+
+
 }
+
 .videoplay {
   height: 362px;
 }
 
-canvas {
+
+
+
+
+.webgl-background {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
+  /* Ensure it's behind other content */
+  /* Add any additional styles for your WebGL background */
 }
-
-
-
-

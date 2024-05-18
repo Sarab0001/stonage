@@ -1,27 +1,32 @@
+"use client"
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Footer, Navbar } from "@/components";
+import { Footer, Navbar, Webgl } from "@/components";
 import 'react-modern-drawer/dist/index.css'
 import Head from "next/head";
+import Script from "next/script";
+import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "StoneAge",
-  description: "Enhancing creative concepts through AI",
-};
-
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const specialPages = ['/workpage', '/servicepage', '/contactpage'];
+  const isSpecialPage = specialPages.includes(pathname);
+
   return (
     <html lang="en">
       <body className={inter.className}>
-      <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      </Head>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className='w-full relative'>
+          <canvas className={`w-full  top-0 z-10 bg-fixed ${isSpecialPage ? 'h-0' : 'absolute  h-[100%] '}`}></canvas>
+          <div className='w-full top-0'>
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+          <Script src="/script.js" strategy="lazyOnload" />
+          <Script src="/dat.gui.min.js" strategy="lazyOnload" />
+        </div>
       </body>
     </html>
   );
