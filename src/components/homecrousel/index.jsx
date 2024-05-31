@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { sliderImage } from "@/constant";
-import Link from "next/link";
-import { Autoplay } from "swiper/modules";
+'use client'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { sliderImage } from '@/constant';
+import Link from 'next/link';
+import { Autoplay } from 'swiper/modules';
 
 export default function Homecrousel({ hideText, color }) {
   return (
@@ -15,15 +15,16 @@ export default function Homecrousel({ hideText, color }) {
         centeredSlides={false}
         spaceBetween={15}
         loop={true}
+       
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        modules={[Autoplay]}
         scrollbar={{
           hide: true,
         }}
+        modules={[Autoplay]}
         breakpoints={{
           0: {
             slidesPerView: 1.4,
