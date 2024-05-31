@@ -9,7 +9,7 @@ const Collaborator = () => {
                     <div className='flex flex-col gap-2 '>
                         <div className='flex flex-col xl:gap-2'>
                             <p className='font-Roboto text-primary font-semibold'>AI Collaborative Campaign</p>
-                            <p className='font-InstrumentSerif text-primary text-15'>Nike</p>
+                                <p className='text-black text-15 font-serif'>Nike</p>
                         </div>
                         <div className=' xl:w-full '>
                             <p className='xl:text-65 lg:text-55 md:text-45 text-34 text-primary  xl:leading-76 lg:leading-60 leading-42  font-Roboto font-semibold'>Enhancing creative concepts through AI</p>
