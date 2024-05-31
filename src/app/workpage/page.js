@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
      
-     <Homecrousel  color={true} hideText={true}/>
+     <Homecrousel  color={true} hideText={true} />
       
       <Collaborator />
       <Details />
