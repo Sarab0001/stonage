@@ -60,29 +60,31 @@ let config = {
     SIM_RESOLUTION: 128,
     DYE_RESOLUTION: 1024,
     CAPTURE_RESOLUTION: 512,
-    DENSITY_DISSIPATION: 1,
-    VELOCITY_DISSIPATION: 0.2,
+    DENSITY_DISSIPATION: 2,  // Increased from 1
+    VELOCITY_DISSIPATION: 1,  // Increased from 0
     PRESSURE: 0.8,
     PRESSURE_ITERATIONS: 20,
     CURL: 30,
     SPLAT_RADIUS: 0.25,
-    SPLAT_FORCE: 6000,
+    SPLAT_FORCE: 3000,  // Reduced from 6000
     SHADING: true,
     COLORFUL: true,
-    COLOR_UPDATE_SPEED: 10,
+    COLOR_UPDATE_SPEED: 5,  // Reduced from 10
     PAUSED: false,
     BACK_COLOR: { r: 0, g: 0, b: 0 },
     TRANSPARENT: false,
-    BLOOM: true,
+    BLOOM: false,
     BLOOM_ITERATIONS: 8,
     BLOOM_RESOLUTION: 256,
     BLOOM_INTENSITY: 0.8,
     BLOOM_THRESHOLD: 0.6,
     BLOOM_SOFT_KNEE: 0.7,
     SUNRAYS: true,
-    SUNRAYS_RESOLUTION: 196,
+    SUNRAYS_RESOLUTION: 10,
     SUNRAYS_WEIGHT: 1.0,
-}
+};
+
+  
 
 function pointerPrototype () {
     this.id = -1;
@@ -1601,13 +1603,14 @@ function correctDeltaY (delta) {
     return delta;
 }
 
-function generateColor () {
-    let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-    c.r *= 0.15;
+function generateColor() {
+    let h = Math.random() < 0.34 ? 0 : Math.random() < 0.68 ? 0.67 : 0.75;
+    let c = HSVtoRGB(h, 1.0, 1.0); 
+    c.r *= 0.15; 
     c.g *= 0.15;
     c.b *= 0.15;
     return c;
-}
+  }
 
 function HSVtoRGB (h, s, v) {
     let r, g, b, i, f, p, q, t;

@@ -31,11 +31,20 @@ body {
 
 .swiper-container {
   z-index: 50 !important;
+  overflow: hidden;
+  position: relative;
 }
 
 .swiper-slide {
   position: relative;
   z-index: 50 !important;
+  flex-shrink: 0;
+ 
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition-timing-function: linear !important; /* Ensure linear motion */
 }
 
 .swiper-containers {

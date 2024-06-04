@@ -17,10 +17,11 @@ export default function Homecrousel({ hideText, color }) {
         loop={true}
        
         autoplay={{
-          delay: 2000,
+          delay: 0,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
+        speed={4000} 
         scrollbar={{
           hide: true,
         }}
