@@ -1,15 +1,41 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavbarImg } from '@/assets';
 import Link from 'next/link';
-import { SideDrawer } from '..';
 import { usePathname } from 'next/navigation';
+import SideDrawer from '../drawer';
+import dynamic from 'next/dynamic';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const pathname = usePathname();
-  const specialPages = ['/workpage'];
+  const specialPages = ['/work', '/work/chanel', '/work/kobie-dee', '/work/new-balance', '/work/new-north-face'];
   const isSpecialPage = specialPages.includes(pathname);
+
+  const dropdownRef = useRef(null);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isDropdownOpen]);
 
   return (
     <div className={isSpecialPage ? `bg-white text-primary pb-8 md:pb-0 py-3 relative z-50` : "bg-primary pb-8 md:pb-0 py-3 text-white"}>
@@ -23,9 +49,27 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className='hidden lg:flex xl:gap-10 lg:gap-5 font-Roboto lg:text-base md:text-sm font-medium'>
-                <Link className='relative z-50' href='/workpage'>
-                  <p>WORK</p>
-                </Link>
+                <div className='relative' ref={dropdownRef}>
+                  <Link className='relative z-50' href='/work/chanel' onClick={toggleDropdown}>
+                    <p>WORK</p>
+                  </Link>
+                  {isDropdownOpen && (
+                    <div className='absolute mt-7 py-2 w-48 bg-white rounded-md shadow-lg z-50'>
+                      <Link href='/work/chanel' className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
+                        Chanel
+                      </Link>
+                      <Link href='/work/kobie-dee' className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
+                        Kobie-dee
+                      </Link>
+                      <Link href='/work/new-balance' className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
+                        New-balance
+                      </Link>
+                      <Link href='/work/new-north-face' className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
+                        New-north-face
+                      </Link>
+                    </div>
+                  )}
+                </div>
                 <Link className='relative z-50' href='/servicepage'>
                   <p>SERVICES</p>
                 </Link>
@@ -42,7 +86,7 @@ const Navbar = () => {
         <div className='flex justify-center'>
           <Link href='/'>
             <img
-              className={`xl:w-269 xl:h-269 w-174 h-174 md:w-174 md:h-174 lg:w-150 lg:h-150 relative z-50 my-6 lg:mt-0 ${pathname == '/workpage' ? 'invert' : ''}`}
+              className={`xl:w-269 xl:h-269 w-174 h-174 md:w-174 md:h-174 lg:w-150 lg:h-150 relative z-50 my-6 lg:mt-0 ${pathname == '/work', "/work/chanel" ? 'invert' : ''}`}
               src={NavbarImg.src} alt="" />
           </Link>
         </div>
@@ -50,7 +94,7 @@ const Navbar = () => {
       {showMenu && (
         <div className='md:hidden'>
           <div className='flex flex-col items-center gap-4 font-medium'>
-            <Link href='/workpage'>
+            <Link href='/work/chanel'>
               <p>WORK</p>
             </Link>
             <Link href='/servicepage'>
@@ -66,4 +110,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default dynamic(() => Promise.resolve(Navbar), { ssr: false })

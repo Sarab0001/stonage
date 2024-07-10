@@ -14,7 +14,7 @@ const Footer = () => {
                         <Link href='/'>
                             <p className='text-lg xs:text-22 font-medium font-Roboto relative z-50'>HOME</p>
                         </Link>
-                        <Link href='/workpage'>
+                        <Link href='/work'>
                             <p className='text-lg xs:text-22 font-medium font-Roboto relative z-50'>WORK</p>
 
                         </Link>

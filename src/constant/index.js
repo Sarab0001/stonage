@@ -1,4 +1,4 @@
-import { ExploreImg3, ExploreImg4, ExploreImg5, ExploreImg6, SliderGif, SliderImg1, SliderImg2, SliderImg4, } from '../assets'
+import { CollabImg, ExploreImg11, ExploreImg12, ExploreImg13, ExploreImg14, ExploreImg15, ExploreImg16, ExploreImg17, ExploreImg18, ExploreImg19, ExploreImg2, ExploreImg20, ExploreImg21, ExploreImg22, ExploreImg23, ExploreImg24, ExploreImg3, ExploreImg4, ExploreImg5, ExploreImg6, ExploreImg9, SliderGif, SliderImg1, SliderImg2, SliderImg4, } from '../assets'
 
 export const sliderImage = [
   {
@@ -96,4 +96,42 @@ export const serviceSliderImg = [
   {
     img: ExploreImg6
   },
+]
+
+export const workPageDataWithId=[
+  {
+    name:"chanel",
+    aiImage:"/videos/aikobie.mp4",
+    detailsImages1:"/videos/rouge.mp4",
+    detailsImages2:ExploreImg2,
+    serviceImages:[ExploreImg3,ExploreImg4,ExploreImg5,ExploreImg6],
+    detailsImages3:"/videos/chnl.mp4",
+    ExportVideo:"kljkljl"
+  },{
+    name:"kobie-dee",
+    aiImage:"/videos/aikobie.mp4",
+    detailsImages1:"/videos/workkobieexplore.mp4",
+    detailsImages2:ExploreImg9,
+    serviceImages:[ExploreImg13,ExploreImg14,ExploreImg15,ExploreImg16],
+    detailsImages3:"/videos/kobieexplore.mp4",
+    ExportVideo:"rouge.mp4"
+
+  },{
+    name:"new-balance",
+    aiImage:"/videos/newbalance.mp4",
+    detailsImages1:"/videos/newexplore.mp4",
+    detailsImages2:ExploreImg11,
+    serviceImages:[ExploreImg17,ExploreImg18,ExploreImg19,ExploreImg20],
+    detailsImages3:"/videos/balanceexplore.mp4",
+    ExportVideo:"rouge.mp4"
+  },
+  {
+    name:"new-north-face",
+    aiImage:"/videos/northface.mp4",
+    detailsImages1:"/videos/newexplore.mp4",
+    detailsImages2:ExploreImg12,
+    serviceImages:[ExploreImg21,ExploreImg23,ExploreImg22,ExploreImg24],
+    detailsImages3:"",
+    ExportVideo:"rouge.mp4"
+  }
 ]

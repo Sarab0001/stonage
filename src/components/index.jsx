@@ -8,7 +8,6 @@ import Explore from './explore'
 import Service from './service'
 import Contact from './contact'
 import ServiceCrousel from './serviceSlider';
-import SideDrawer from './drawer';
 
-export {Navbar, Home, Homecrousel, LetsCreate, Footer, Details, Explore, Service, Contact,SideDrawer, ServiceCrousel }
+export {Navbar, Home, Homecrousel, LetsCreate, Footer, Details, Explore, Service, Contact, ServiceCrousel }
 

@@ -1,7 +1,7 @@
 import { BlackArrow, CollabImg } from '@/assets'
 import React from 'react'
 
-const Collaborator = () => {
+const Collaborator = ({ data }) => {
     return (
         <div className='bg-white py-12 '>
             <div className='w-11/12 mx-auto md:p-8 '>
@@ -9,7 +9,7 @@ const Collaborator = () => {
                     <div className='flex flex-col gap-2 '>
                         <div className='flex flex-col xl:gap-2'>
                             <p className='font-Roboto text-primary font-semibold'>AI Collaborative Campaign</p>
-                                <p className='text-black text-15 font-serif'>Nike</p>
+                            <p className='text-black text-15 font-serif'>Nike</p>
                         </div>
                         <div className=' xl:w-full '>
                             <p className='xl:text-65 lg:text-55 md:text-45 text-34 text-primary  xl:leading-76 lg:leading-60 leading-42  font-Roboto font-semibold'>Enhancing creative concepts through AI</p>
@@ -23,9 +23,19 @@ const Collaborator = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='lg:w-92p  '>
-                        <img className='w-full h-full' src={CollabImg.src} alt="" />
+                    <div className='lg:w-92p h-[700px] '>
+                        <video preload="none"
+                            autoPlay={true}
+                            muted
+                            playsInline
+                            loop
+                            className='w-full h-full object-cover'
+                            src={data?.aiImage}
+                            alt="Image not found" >
+                            <source src={data?.aiImage} type="video/mp4" />
+                        </video>
                     </div>
+
 
                 </div>
             </div>

@@ -8,7 +8,7 @@ import { Scrollbar } from 'swiper/modules';
 
 
 
-export default function servicecrousel() {
+export default function servicecrousel({data}) {
   return (
     <>
       <Swiper
@@ -48,9 +48,9 @@ export default function servicecrousel() {
       >
         {
 
-          serviceSliderImg.map((elem, i) => (
+          data?.serviceImages.map((elem, i) => (
             <SwiperSlide key={i}>
-              <img className='md:h-685 h-456 w-full object-cover' src={elem.img.src} alt="" />
+              <img className='md:h-685 h-456 w-full object-cover' src={elem.src} alt="" />
             </SwiperSlide>
           ))
         }

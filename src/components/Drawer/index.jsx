@@ -15,7 +15,7 @@ const SideDrawer = () => {
 
     return (
         <>
-            <button onClick={toggleDrawer}><img className={pathname == '/workpage' ? 'invert w-44 h-44 md:w-[55 px] md:h-[68px]' : 'w-44 h-[46px] m-2 md:w-[55px] md:h-[68px] '} src={Hamburger.src} alt="" /></button>
+            <button onClick={toggleDrawer}><img className={pathname == '/work' ? 'invert w-44 h-44 md:w-[55 px] md:h-[68px]' : 'w-44 h-[46px] m-2 md:w-[55px] md:h-[68px] '} src={Hamburger.src} alt="" /></button>
             <Drawer
                 open={isOpen}
                 onClose={toggleDrawer}
@@ -23,7 +23,7 @@ const SideDrawer = () => {
                 className='bla bla bla !w-52'
             >
                     <div className='p-6 flex flex-col gap-6'>
-                        <Link href='/workpage'>
+                        <Link href='/work'>
                             <p className='text-black'>WORK</p>
                         </Link>
                         <Link href='/servicepage'>

@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
-  const specialPages = ['/workpage', '/servicepage', '/contactpage'];
+  const specialPages = ['/work','/work/chanel','/work/kobie-dee','/work/new-balance','/work/new-north-face',  '/servicepage', '/contactpage'];
   const isSpecialPage = specialPages.includes(pathname);
 
   return (
